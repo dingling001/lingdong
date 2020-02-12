@@ -11,7 +11,7 @@
     line-height: 80px;
     border-bottom: 1px solid #eee;
 }
-.container {
+.top .container {
     width: 1200px;
     margin: 0 auto;
     overflow: hidden;
@@ -95,7 +95,7 @@
     text-align: left;
     width: 1200px;
     margin: 0 auto;
-    padding: 35.1% 0 29px 0;
+    padding: 25.1% 0 29px 0;
     overflow: hidden;
 }
 .bg1en {
@@ -111,7 +111,7 @@
 .face {
     position: absolute;
     width: 289px;
-    top: 20%;
+    top: 10%;
     right: 0;
 }
 .face img {
@@ -121,14 +121,14 @@
     position: absolute;
     color: #B07050;
     font-size: 18px;
-    bottom: 66px;
+    bottom: 146px;
     left: 0;
     right: 0;
     text-align: center;
 }
 .tipsimg {
     position: absolute;
-    bottom: 0px;
+    bottom: 80px;
     text-align: center;
     left: 0;
     right: 0;
@@ -143,7 +143,7 @@
     font-size: 38px;
     color: #fff;
     text-align: center;
-    padding: 146px 0 0 0;
+    padding: 66px 0 0 0;
     line-height: 60px;
     position: relative;
     font-weight: bold;
@@ -169,11 +169,34 @@
 .box .item:last-child {
     margin: 0;
 }
-.box .item img {
+.box .item .img {
     width: 250px;
     height: 250px;
     border-radius: 50%;
+    overflow: hidden;
     border: 1px dashed #FFAB4B;
+    position: relative;
+    cursor: pointer;
+}
+.box .item .img .mold {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 250px;
+    background-color: rgba(236, 101, 56, 0.4);
+    bottom: -250px;
+    transition: all 0.3s;
+}
+.box .item .img .mold img {
+    width: 71px;
+}
+.box .item .img:hover .mold {
+    bottom: 0;
+}
+.box .item .img img {
+    width: 100%;
 }
 .title:before {
     content: '';
@@ -200,7 +223,19 @@
     line-height: 60px;
     font-weight: bold;
 }
-.bg4 .bg4title:before {
+.bg4 .title {
+    color: #333333;
+}
+.bg5 .title {
+    color: #333;
+}
+.bg6 .title {
+    color: #fff;
+}
+.bg6 .title:before {
+    border-bottom: 8px solid #fff;
+}
+.bg4 .title:before {
     border-bottom: 8px solid #F28F35;
 }
 .bg5 .bg5title {
@@ -215,7 +250,7 @@
     line-height: 60px;
     font-weight: bold;
 }
-.bg5 .bg5title:before {
+.bg5 .title:before {
     border-bottom: 8px solid #F28F35;
 }
 .bg3 .bg3title {
@@ -246,9 +281,6 @@
     line-height: 60px;
     font-weight: bold;
 }
-.bg6 .bg6title:before {
-    border-bottom: 8px solid #fff;
-}
 .fp-section {
     /*padding: 80px 0 0 0;*/
 }
@@ -277,7 +309,7 @@
     font-size: 0;
     margin: 0 auto;
     position: absolute;
-    bottom: 0;
+    bottom: 60px;
     left: 0;
     right: 0;
     width: 1200px;
@@ -334,7 +366,7 @@
     left: 0;
 }
 .imgmid {
-    width: 30%;
+    width: 25%;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -362,15 +394,23 @@
 }
 .imgl {
     position: absolute;
-    top: 50.3%;
+    top: 55.3%;
     left: 15.25%;
-    width: 17%;
+    height: 254px;
+}
+.imgl img {
+    height: 100%;
+    width: auto;
 }
 .imgr {
     position: absolute;
+    top: 55.3%;
     right: 15.25%;
-    width: 17%;
-    top: 50.3%;
+    height: 254px;
+}
+.imgr img {
+    height: 100%;
+    width: auto;
 }
 .bbox {
     position: absolute;
@@ -448,13 +488,29 @@
     position: relative;
     z-index: 1;
 }
+.hbox .hitem:hover .img {
+    opacity: 1;
+}
+.hbox .hitem .img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transition: ease-in-out 0.3s;
+    opacity: 0;
+}
+.hbox .hitem .img img {
+    width: 100%;
+}
 .hbox .hitem .htext {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 2;
+    z-index: 3;
     border: 1px dashed #fff;
     font-size: 36px;
     padding: 85.4% 0 0 0;
