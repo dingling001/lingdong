@@ -13,6 +13,9 @@
     top: 0;
     left: 0;
 }
+.fp-section{
+    transition: ease-in-out .3s;
+}
 .top .toplogo {
     width: 3.6rem;
     display: flex;
@@ -65,11 +68,15 @@
     text-align: center;
     line-height: 0.6rem;
     font-weight: bold;
-    position: absolute;
-    top: 0.69rem;
-    left: 0;
-    width: 100%;
-    z-index: 10;
+    position: relative;
+    /*position: absolute;*/
+    /*top: 0.69rem;*/
+    /*left: 0;*/
+    /*width: 100%;*/
+    /*z-index: 10;*/
+    margin-bottom: 2rem;
+    transition: ease-in-out .3s;
+
 }
 .bg .title:before {
     content: '';
@@ -132,6 +139,9 @@
 .bg.bg2 {
     background-image: url("../mimgs/bg2.png");
 }
+.bg.bg2 .title{
+    margin-bottom: 4rem;
+}
 .bg.bg2 .swiper-container .swiper-wrapper {
     width: 100%;
 }
@@ -160,6 +170,9 @@
 }
 .bg.bg3 {
     background: linear-gradient(0deg, #ed7138, #ffab4b);
+}
+.bg.bg3 .title{
+    margin-bottom: 4rem;
 }
 .bg.bg3 .title:before {
     border-bottom: 0.08rem solid #fff;
@@ -348,6 +361,9 @@
 .bg.bg6 {
     background-color: #F4A032;
 }
+.bg.bg6 .title{
+    margin: 0;
+}
 .bg.bg6 .title:before {
     border-bottom: 0.08rem solid #fff;
 }
@@ -357,7 +373,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 0 0.64rem;
-    margin: 1.3rem 0 0 0;
+    margin: .5rem 0 0 0;
 }
 .bg.bg6 .hbox .hitem {
     width: 2.86rem;

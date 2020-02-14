@@ -17,7 +17,6 @@ $(document).ready(function () {
         } else {
             $('#ricon').attr('src', './assets/mimgs/menu.png')
         }
-        console.log($('#menu')[0].style)
     })
     $('#menu').click(function () {
         $(this).slideToggle();
@@ -27,7 +26,18 @@ $(document).ready(function () {
         } else {
             $('#ricon').attr('src', './assets/mimgs/menu.png')
         }
-    })
+    });
+    $('.fp-section').click(function () {
+        if ($('.top').hasClass('slideInDown')) {
+            r('.top', 'slideInDown');
+            a('.top', 'slideOutUp');
+            $('.top').css('position', 'fixed');
+        } else {
+            a('.top', 'slideInDown');
+            r('.top', 'slideOutUp');
+            $('.top').css('position', 'sticky');
+        }
+    });
     var mySwiper = new Swiper('.swiper-container', {
         loop: true,
         autoplay: 1500,
