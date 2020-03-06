@@ -441,15 +441,31 @@
 .iconbox .l3 {
     background-image: url("../imgs/l3.png");
     height: 1.69rem;
-    background-repeat: repeat-x;
+    /*background-repeat: repeat-x;*/
+    /*animation: anim_wave 16s linear infinite;*/
+    /*width: 15rem;*/
+    /*transform-origin: center bottom;*/
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*bottom: 0;*/
+    animation: heart1 1.3s ease-in-out 2.7s infinite alternate;
+
 }
 
 .iconbox .l4 {
     background-image: url("../imgs/l4.png");
     height: 1.69rem;
     margin: -1.41rem 0 0 0;
-    background-repeat: repeat-x;
+    /*background-repeat: repeat-x;*/
     background-position: -.8rem 0;
+    animation: heart 1.3s ease-in-out 2.7s infinite alternate;
+
+    /*animation: anim_wave 15s linear infinite;*/
+    /*transform-origin: center bottom;*/
+    /*width: 15rem;*/
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*bottom: 0;*/
 }
 
 .offerbg {
@@ -528,22 +544,27 @@
 .iconitem:hover {
     color: #EB6739;
 }
+.iconitem img{
+    transition: ease-in-out .3s;
+}
 
-.iconitem img {
+.iconitem:hover img {
+    transform: scale(1.1);
     /*transition: ease-in-out .3s;*/
     /*cursor: pointer;*/
+
 }
 
 .iconitem.icona img {
     width: 1.51rem;
     /*width: 100%;*/
-    animation: heart1 1.3s ease-in-out 2.7s infinite alternate;;
+    animation: heart1 1.3s ease-in-out 2.7s infinite alternate;
 }
 
 .iconitem.iconb img {
     width: 1.13rem;
     /*width: 100%;*/
-    animation: heart 1.3s ease-in-out 2.7s infinite alternate;;
+    /*animation: heart 1.3s ease-in-out 2.7s infinite alternate;*/
 }
 
 
@@ -830,11 +851,12 @@
     left: -4.8rem;
 }
 
-.bbox .bitem:hover .textspan span{
+.bbox .bitem:hover .textspan span {
     color: #EB6739;
     font-weight: bold;
 }
-.bbox .bitem:hover .imgbox img{
+
+.bbox .bitem:hover .imgbox img {
     transform: scale(1.1);
 }
 
@@ -952,7 +974,8 @@
     font-size: .38rem;
     font-weight: bold;
 }
-.hbox .hitem .htext.hovertext{
+
+.hbox .hitem .htext.hovertext {
     font-size: .38rem;
     font-weight: bold;
 }
@@ -1072,8 +1095,8 @@
     color: #FF6317;
     font-size: .18rem;
     text-align: center;
-    padding:.23rem 0;
-    line-height:.2rem;
+    padding: .23rem 0;
+    line-height: .2rem;
 }
 
 .hbg .en {
@@ -1284,7 +1307,7 @@ ul.bmenu li:hover a {
         transform: translate(0, 0)
     }
     to {
-        transform: translate(0, 10px)
+        transform: translate(0, 20px)
     }
 }
 
@@ -1293,7 +1316,7 @@ ul.bmenu li:hover a {
         transform: translate(0, 0)
     }
     to {
-        transform: translate(0, 10px)
+        transform: translate(0, 20px)
     }
 }
 
@@ -1428,5 +1451,17 @@ ul.bmenu li:hover a {
     100% {
         animation-timing-function: linear;
         bottom: -1.5rem;
+    }
+}
+
+@keyframes anim_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
     }
 }
