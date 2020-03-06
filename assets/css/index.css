@@ -169,7 +169,7 @@
     overflow: hidden;
     word-break: keep-all;
     white-space: nowrap;
-    animation: caret 0.5s step-end infinite, text 1s steps(11);
+    /*animation: caret 0.5s step-end infinite, text 1s steps(11);*/
 }
 
 .bg1en .t2 {
@@ -180,7 +180,7 @@
     overflow: hidden;
     word-break: keep-all;
     white-space: nowrap;
-    animation: caret 0.5s step-end infinite, text 1s steps(11);
+    /*animation: caret 0.5s step-end infinite, text 1s steps(11);*/
 }
 
 .bg1en img {
@@ -706,6 +706,7 @@
     top: 55.3%;
     left: 15.25%;
     height: 2.54rem;
+
 }
 
 .imgl img {
@@ -948,6 +949,10 @@
 }
 
 .hbox .hitem:hover .htext {
+    font-size: .38rem;
+    font-weight: bold;
+}
+.hbox .hitem .htext.hovertext{
     font-size: .38rem;
     font-weight: bold;
 }

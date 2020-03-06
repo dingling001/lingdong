@@ -93,17 +93,17 @@ body {
 }
 
 .planet .ball {
-    background-size: 100% 100%;
-    transform-origin: 50% 50% 0;
-    background-repeat: no-repeat;
-    background-position: center center;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    transform: rotateX(-90deg) rotateY(0deg);
-    animation: planetrotate 10s linear 0s normal none infinite;
+    /*background-size: 100% 100%;*/
+    /*transform-origin: 50% 50% 0;*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center center;*/
+    /*position: absolute;*/
+    /*height: 100%;*/
+    /*width: 100%;*/
+    /*left: 0;*/
+    /*top: 0;*/
+    /*transform: rotateX(-90deg) rotateY(0deg);*/
+    /*animation: planetrotate 10s linear 0s normal none infinite;*/
 }
 
 
@@ -197,7 +197,6 @@ body {
     width: 30px;
     left: 35px;
     top: 35px;
-}
 }
 
 .orbit.earth > .planet > .ball {

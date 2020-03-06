@@ -37,6 +37,8 @@ $(document).ready(function () {
             clearTimeout(l2);
             clearTimeout(l3);
             clearTimeout(l4);
+            r('.hitem', 'animated fadeIn fast');
+
             // r('.bg1text', 'slideInUp');
             // r('.bg1en', 'slideInUp');
             // r('.title ','animated slideInDown');
@@ -57,11 +59,13 @@ $(document).ready(function () {
             r('.b3 .imgbox', 'imgbox3');
             r('.b4 .imgbox', 'imgbox4');
             r('.qplus', 'swing');
-            r('.hbg', 'slideInDown');
+            // r('.hbg', 'slideInDown');
             r('.midimg', 'zoomIn')
             r('.imgtext', 'slideInUp');
-            r('.textspan','animated slideInDown delay-2s fast');
+            r('.textspan', 'animated slideInDown delay-2s fast');
             // $('.bitem').animate({'left': '-260px'});
+            r('.address', 'flipInX');
+            r('.bmenu li', 'flipInY');
             if (dir == 'down') {
                 r('.top', 'slideInDown');
                 a('.top', 'slideOutUp');
@@ -81,6 +85,9 @@ $(document).ready(function () {
             // a('.bg1text', 'slideInUp');
             // a('.bg1en', 'slideInUp');
             // a('.title ','animated slideInDown');
+            a('.t1', 'bounceInLeft');
+            a('.t2', 'bounceInLeft');
+            a('.bg1text', 'bounceInLeft');
             a('.title .en', 'slideInDown');
             // a('.title .isword','zoomIn fast');
             // a('.title .us','animated bounceInLeft');
@@ -99,16 +106,43 @@ $(document).ready(function () {
             a('.b2 .imgbox', 'imgbox2');
             a('.b3 .imgbox', 'imgbox3');
             a('.b4 .imgbox', 'imgbox4');
-            a('.textspan','animated slideInDown delay-2s fast');
+            a('.textspan', 'animated slideInDown delay-2s fast');
             // $('.bitem').addClass('slideInLeft')
             a('.qplus', 'swing');
-            a('.hbg', 'slideInDown');
+            // a('.hbg', 'slideInDown');
             a('.midimg', 'zoomIn');
             a('.imgtext', 'slideInUp');
-            l1 = setTimeout(a('.l1', 'loaded'), 500);
-            l2 = setTimeout(a('.l2', 'loaded'), 700);
-            l3 = setTimeout(a('.l3', 'loaded'), 900);
-            l4 = setTimeout(a('.l4', 'loaded'), 1100);
+            // a('.l1', 'loaded'),
+            a('.hitem', 'animated fadeIn slower');
+            l1 = setTimeout(function () {
+                $('.l1').addClass('loaded');
+                $('.ll1 .htext').addClass('hovertext')
+            }, 500);
+            l2 = setTimeout(function () {
+                $('.l2').addClass('loaded');
+                $('.ll2 .htext').addClass('hovertext');
+                $('.ll1 .htext').removeClass('hovertext');
+
+            }, 1000);
+            l3 = setTimeout(function () {
+                $('.l3').addClass('loaded')
+                $('.ll3 .htext').addClass('hovertext');
+                $('.ll2 .htext').removeClass('hovertext');
+
+            }, 1500);
+            l4 = setTimeout(function () {
+                $('.l4').addClass('loaded')
+                $('.ll4 .htext').addClass('hovertext')
+                $('.ll3 .htext').removeClass('hovertext');
+                setTimeout(function () {
+                    $('.ll4 .htext').removeClass('hovertext');
+                }, 500)
+            }, 2000);
+            a('.address', 'flipInX');
+            a('.bmenu li', 'flipInY')
+            // l2 = setTimeout(a('.l2', 'loaded'), 1700);
+            // l3 = setTimeout(a('.l3', 'loaded'), 1900);
+            // l4 = setTimeout(a('.l4', 'loaded'), 11100);
             // $('.bitem').each(function (index) {
             //     console.log(index)
             //     var t=this;
