@@ -46,18 +46,18 @@ $(document).ready(function () {
             // r('.bg1text', 'slideInUp');
             // r('.bg1en', 'slideInUp');
             // r('.title ','animated slideInDown');
-            r('.t1', 'bounceInLeft');
-            r('.t2', 'bounceInLeft');
-            r('.bg1text', 'bounceInLeft');
+            r('.t1', 'fadeIn');
+            r('.t2', 'fadeIn');
+            r('.bg1text', 'fadeIn');
             r('.title .en', 'slideInDown');
             r('.title .isword', 'bounceInDown fast');
             r('.title .us', 'animated  zoomIn ');
             r('.face', 'fadeIn');
-            r('.item', 'fadeInLeft');
-            r('.itemtext', 'slideInUp');
-            r('.item .en', 'slideInUp');
+            r('.item', 'fadeIn slower');
+            r('.itemtext', 'fadeIn slower');
+            r('.item .en', 'fadeIn slower');
             // r('.offerbg', 'slideInUp');
-            r('.iconitem', 'fadeIn');
+            r('.iconitem', 'fadeIn slower');
             r('.imgs', 'flipInY delay-1s');
             r('.img .success', 'zoomIn delay-1s');
             r('.line', 'zoomIn');
@@ -76,6 +76,10 @@ $(document).ready(function () {
             // $('.bitem').animate({'left': '-260px'});
             r('.address', 'flipInX');
             r('.bmenu li', 'flipInY');
+            r('.div>div', 'animated fadeIn slower');
+            r('.lineimg', 'fadeIn slow');
+            r('.midimg', 'zoomIn')
+
             // r('.bitem.b1 .bline', 'line1');
             // r('.bitem.b2 .bline', 'line2');
             // r('.bitem.b3 .bline', 'line3');
@@ -130,19 +134,19 @@ $(document).ready(function () {
             // a('.bg1text', 'slideInUp');
             // a('.bg1en', 'slideInUp');
             // a('.title ','animated slideInDown');
-            a('.t1', 'bounceInLeft');
-            a('.t2', 'bounceInLeft');
-            a('.bg1text', 'bounceInLeft');
+            a('.t1', 'fadeIn');
+            a('.t2', 'fadeIn');
+            a('.bg1text', 'fadeIn');
             // a('.title .en', 'slideInDown');
             // a('.title .isword','zoomIn fast');
             // a('.title .us','animated bounceInLeft');
             // a('.title .isword', 'bounceInDown fast');
             // a('.title .us', 'animated  zoomIn ');
             a('.face', 'fadeIn');
-            a('.item', 'fadeInLeft');
+            a('.item', 'fadeIn slower');
             // a('.itemtext', 'slideInUp');
             // a('.item .en', 'slideInUp');
-            a('.iconitem', 'fadeIn');
+            a('.iconitem', 'fadeIn slower');
             a('.imgs', 'flipInY delay-1s');
             a('.img .success', 'zoomIn delay-1s');
             a('.line', 'zoomIn');
@@ -194,6 +198,7 @@ $(document).ready(function () {
             a('.b4 .imgbox', 'imgbox4');
             a('.textspan', 'animated slideInDown delay-1s fast');
             // $('.bitem').addClass('slideInLeft')
+            // $('.bitem').addClass('slideInLeft')
             a('.qplus', 'swing');
             // a('.hbg', 'slideInDown');
             // a('.midimg', 'zoomIn');
@@ -212,13 +217,13 @@ $(document).ready(function () {
 
             }, 1000);
             l3 = setTimeout(function () {
-                $('.l3').addClass('loaded')
+                // $('.l3').addClass('loaded')
                 $('.ll3 .htext').addClass('hovertext');
                 $('.ll2 .htext').removeClass('hovertext');
 
             }, 1500);
             l4 = setTimeout(function () {
-                $('.l4').addClass('loaded')
+                // $('.l4').addClass('loaded')
                 $('.ll4 .htext').addClass('hovertext')
                 $('.ll3 .htext').removeClass('hovertext');
                 setTimeout(function () {
@@ -227,6 +232,10 @@ $(document).ready(function () {
             }, 2000);
             a('.address', 'flipInX');
             a('.bmenu li', 'flipInY')
+            a('.div>div', 'animated fadeIn slower');
+            a('.lineimg', 'fadeIn slow');
+            a('.midimg', 'zoomIn')
+
             // l2 = setTimeout(a('.l2', 'loaded'), 1700);
             // l3 = setTimeout(a('.l3', 'loaded'), 1900);
             // l4 = setTimeout(a('.l4', 'loaded'), 11100);
