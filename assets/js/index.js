@@ -147,8 +147,8 @@ $(document).ready(function () {
             // a('.itemtext', 'slideInUp');
             // a('.item .en', 'slideInUp');
             a('.iconitem', 'fadeIn slower');
-            a('.imgs', 'flipInY delay-1s');
-            a('.img .success', 'zoomIn delay-1s');
+            a('.imgs', 'fadeIn delay-1s');
+            a('.img .success', 'fadeIn delay-1s');
             a('.line', 'zoomIn');
 
             // var href = window.location.href;
@@ -217,13 +217,13 @@ $(document).ready(function () {
 
             }, 1000);
             l3 = setTimeout(function () {
-                // $('.l3').addClass('loaded')
+                $('.l3').addClass('loaded')
                 $('.ll3 .htext').addClass('hovertext');
                 $('.ll2 .htext').removeClass('hovertext');
 
             }, 1500);
             l4 = setTimeout(function () {
-                // $('.l4').addClass('loaded')
+                $('.l4').addClass('loaded')
                 $('.ll4 .htext').addClass('hovertext')
                 $('.ll3 .htext').removeClass('hovertext');
                 setTimeout(function () {
@@ -234,7 +234,6 @@ $(document).ready(function () {
             a('.bmenu li', 'flipInY')
             a('.div>div', 'animated fadeIn slower');
             a('.lineimg', 'fadeIn slow');
-            a('.midimg', 'zoomIn')
 
             // l2 = setTimeout(a('.l2', 'loaded'), 1700);
             // l3 = setTimeout(a('.l3', 'loaded'), 1900);
