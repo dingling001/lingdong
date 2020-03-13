@@ -37,12 +37,19 @@ $(document).ready(function () {
             // console.log(direction, 'leave')
             var dir = direction;
             var index = origin.index;
+            $('.inner').hide();
+            $('.box').hide();
+            $('.iconbox').hide();
+            $('.logowhite').hide();
+            $('.div').hide();
+            $('.bbox').hide();
+            $('.hbox').hide();
+            $('.bmenu').hide();
             clearTimeout(l1);
             clearTimeout(l2);
             clearTimeout(l3);
             clearTimeout(l4);
             r('.hitem', 'animated fadeIn fast');
-
             // r('.bg1text', 'slideInUp');
             // r('.bg1en', 'slideInUp');
             // r('.title ','animated slideInDown');
@@ -79,6 +86,7 @@ $(document).ready(function () {
             r('.div>div', 'animated fadeIn slower');
             r('.lineimg', 'fadeIn slow');
             r('.midimg', 'zoomIn')
+            r('.logowhite', 'fadeIn')            // l2 = setTimeout(a('.l2', 'loaded'), 1700);
 
             // r('.bitem.b1 .bline', 'line1');
             // r('.bitem.b2 .bline', 'line2');
@@ -130,6 +138,15 @@ $(document).ready(function () {
         afterLoad: function (origin, destination, direction) {
             console.log(origin, 'afterLoad', direction)
             var index = origin.index;
+            $('.inner').show();
+            $('.box').show();
+            $('.iconbox').show();
+            $('.logowhite').show();
+            $('.div').show();
+            $('.bbox').show();
+            $('.hbox').show();
+            $('.bmenu').show();
+
             // typing('WE ARE BORN', 't1');
             // a('.bg1text', 'slideInUp');
             // a('.bg1en', 'slideInUp');
@@ -234,8 +251,7 @@ $(document).ready(function () {
             a('.bmenu li', 'flipInY')
             a('.div>div', 'animated fadeIn slower');
             a('.lineimg', 'fadeIn slow');
-
-            // l2 = setTimeout(a('.l2', 'loaded'), 1700);
+            a('.logowhite', 'fadeIn')            // l2 = setTimeout(a('.l2', 'loaded'), 1700);
             // l3 = setTimeout(a('.l3', 'loaded'), 1900);
             // l4 = setTimeout(a('.l4', 'loaded'), 11100);
             // $('.bitem').each(function (index) {
