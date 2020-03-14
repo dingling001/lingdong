@@ -52,7 +52,14 @@ $(document).ready(function () {
         centeredSlides: true,
         spaceBetween: 20,
         speed: 1000,
-    });
+    })
+    $('.mold').show();
+    // $('#fullpage').css('overflow','hidden');
+    setTimeout(function () {
+        // $('#fullpage').css('overflow','auto');
+        $('.mold').hide();
+        $('.block').show();
+    }, 1000);
     var l1, l2, l3, l4;
     $('#fullpage').fullpage({
         anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7'],
@@ -131,9 +138,9 @@ $(document).ready(function () {
             $('.bg4box').show();
             $('.bgmid').show();
             $('.hbox').show();
-            a('.bg1text', 'fadeIn');
+            a('.bg1text', 'fadeIn delay-1s');
             a('.bg1en', 'fadeIn');
-            a('.face', 'fadeIn');
+            a('.face', 'fadeIn delay-1s');
             // a('.title .a', 'slideInDown');
             // a('.title .b', 'zoomIn');
             a('.swiper-container', 'fadeIn')
