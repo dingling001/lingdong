@@ -834,7 +834,7 @@
     height: 1.55rem;
     display: block;
     position: absolute;
-z-index: 2;
+    z-index: 2;
     /*line-height: 150px;*/
     /*text-align: center;*/
     /*position: relative;*/
@@ -1209,6 +1209,8 @@ z-index: 2;
     text-align: justify;
 }
 
+
+
 .address .icon {
     width: .26rem;
     margin: 0 .1rem 0 0;
@@ -1219,8 +1221,18 @@ z-index: 2;
     width: .2rem;
 }
 
+
 .address .ress {
     padding-left: .1rem;
+    color: #fff;
+}
+.address.beian {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.address.beian:hover a {
+    color: #333;
 }
 
 .hbg {
