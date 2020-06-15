@@ -10,7 +10,6 @@ $(document).ready(function () {
     // $('.top').click(function () {
     //     $(this).addClass('slideOutUp');
     // })
-
     $('.ricon').click(function (e) {
         e.stopPropagation()
         // $('#navbox').addClass('fadeInLeft');
@@ -61,7 +60,7 @@ $(document).ready(function () {
         centeredSlides: true,
         spaceBetween: 20,
         speed: 1000,
-        observers:true,
+        observers: true,
         observeParents: true,
     })
     $('.mold').show();
@@ -70,7 +69,7 @@ $(document).ready(function () {
         // $('#fullpage').css('overflow','auto');
         $('.mold').hide();
         $('.block').show();
-    }, 1000);
+    }, 1500);
     var l1, l2, l3, l4;
     $('#fullpage').fullpage({
         anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7'],

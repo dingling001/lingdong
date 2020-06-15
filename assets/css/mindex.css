@@ -122,8 +122,8 @@
     height: 100%;
     /*background-color: #fff;*/
     float: right;
-    padding:1.2rem 0 0 0;
-    background-color: rgba(0,0,0,.6);
+    padding: 1.2rem 0 0 0;
+    background-color: rgba(0, 0, 0, .6);
 }
 
 .navbox {
@@ -149,7 +149,8 @@
     background-color: #FF6634;
 
 }
-.navbox .menu li.active a{
+
+.navbox .menu li.active a {
     color: #fff;
 }
 
@@ -291,18 +292,28 @@
     font-size: 0.56rem;
     margin-top: .41rem;
     position: relative;
+    font-weight: bold;
 }
 
-.bg.bg1 .bg1text:before {
-    content: '';
-    position: absolute;
-    width: .45rem;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    bottom: -.23rem;
-    border-bottom: 4px solid #fff;
+.t1 {
+    font-size: .28rem;
 }
+
+.t2 {
+
+    font-size: .22rem;
+}
+
+/*.bg.bg1 .bg1text:before {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    width: .45rem;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    margin: 0 auto;*/
+/*    bottom: -.23rem;*/
+/*    border-bottom: 4px solid #fff;*/
+/*}*/
 
 .bg.bg1 .bg1text span {
     font-weight: bold;
@@ -322,10 +333,12 @@
 }
 
 .bg.bg1 .bg1en {
-    width: 4.74rem;
-    /*margin: 0 auto;*/
-    margin: 50vh auto 0 auto;
-
+    /*width: 4.74rem;*/
+    margin: 0 auto;
+    text-align: center;
+    /*margin: 50vh auto 0 auto;*/
+    color: #fff;
+    padding: .2rem 0;
 }
 
 .bg.bg1 .bg1en img {
@@ -650,12 +663,14 @@
     /*width: 7.24rem;*/
     position: relative;
 }
-.bg.bg5 .bgmid{
+
+.bg.bg5 .bgmid {
 
 }
+
 .bg.bg5 .bgmid .bgmidimg {
     width: 62%;
-margin: 0 auto;
+    margin: 0 auto;
     padding: .3rem 0;
     display: block;
 }

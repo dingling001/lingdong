@@ -60,9 +60,10 @@
     background-color: #fff;
     line-height: .35rem;
     padding: 0 .15rem;
-    color: #333;
+    /*color: #333;*/
     text-decoration: none;
     transition: ease-in-out 0.5s;
+    color: #ff6633;
 }
 
 .menu a:hover {
@@ -112,18 +113,20 @@
 }
 
 .bg1text {
+    /*padding: 20% 0 0 0;*/
     /*font-size: 67px;*/
     color: #fff;
-    font-weight: 500;
-    text-align: left;
+    /*text-align: left;*/
     width: 13.66rem;
     min-width: 800px;
     margin: 0 auto;
     overflow: hidden;
     font-size: .67rem;
-    padding: .62rem 0 .56rem 0;
+    /*padding: .62rem 0 .56rem 0;*/
     /*font-size: 0;*/
     position: relative;
+    text-align: center;
+    font-weight: 400;
 }
 
 .bg1text:after {
@@ -150,32 +153,35 @@
 }
 
 .bg1text .lingbox {
-    font-weight: 300;
     font-size: .67rem;
     /*font-size: 0;*/
     width: 8.31rem;
+    font-weight: 500;
 }
 
 .bg1text .lingbox .ling {
     padding: .35rem 0;
     display: inline-block;
-    border-bottom: 5px solid #fff;
+}
+.bg1text  .zhiwei{
+    letter-spacing: 3px;
 }
 
 .bg1en {
-    text-align: left;
-    padding: 20% 0 0 0;
-    width: 13.66rem;
+    /*text-align: left;*/
+    /*width: 13.66rem;*/
+    padding: 30px 0;
     min-width: 800px;
     margin: 0 auto;
     font-size: .5rem;
     color: #fff;
     /*font-size: 0;*/
+    text-align: center;
 }
 
 .bg1en .t1 {
-    width: 6.07rem;
-    font-size: .6rem;
+    /*width: 6.07rem;*/
+    font-size: .3rem;
     /*font-weight: 300;*/
     /*text-align: justify;*/
     /*width: 12ch;*/
@@ -186,10 +192,10 @@
 }
 
 .bg1en .t2 {
-    font-size: .35rem;
-    padding-top: .1rem;
-    text-align: justify;
-    width: 15ch;
+    font-size: .24rem;
+    /*padding-top: .1rem;*/
+    /*text-align: justify;*/
+    /*width: 15ch;*/
     overflow: hidden;
     word-break: keep-all;
     white-space: nowrap;
